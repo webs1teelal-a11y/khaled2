@@ -1,0 +1,243 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>KHALED - ديور</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="brand.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;500;700;800&family=Playfair+Display:ital,wght@0,700;1,600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- NAVBAR -->
+    <header class="navbar" id="navbar">
+      <div class="nav-top">
+        <a href="index.html" class="nav-logo"
+          ><span class="logo-faces">KHALED</span></a
+        >
+        <div class="nav-search">
+          <input
+            type="text"
+            placeholder="ابحث عن الجمال والعلامات التجارية والمزيد"
+          />
+          <button class="search-btn">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="18"
+              height="18"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <circle cx="11" cy="11" r="8" />
+              <line x1="21" y1="21" x2="16.65" y2="16.65" />
+            </svg>
+          </button>
+        </div>
+        <div class="nav-icons">
+          <a href="cart.html" class="icon-btn" title="عربة التسوق">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="22"
+              height="22"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="1.8"
+                d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z"
+              />
+              <line x1="3" y1="6" x2="21" y2="6" />
+              <path d="M16 10a4 4 0 01-8 0" />
+            </svg>
+            <span class="cart-badge" id="cartBadge">0</span>
+          </a>
+        </div>
+        <button class="hamburger" id="hamburger">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+      <nav class="nav-links" id="navLinks">
+        <ul>
+          <li>
+            <a href="#" class="nav-link active-sale">تصفيات | قريبا</a>
+          </li>
+          <li><a href="#" class="nav-link nav-egypt">الصفحة الرئيسية</a></li>
+          <!-- <li><a href="#" class="nav-link">جميع الماركات</a></li>
+        <li><a href="#" class="nav-link">العطور</a></li>
+        <li><a href="#" class="nav-link">المكياج</a></li>
+        <li><a href="#" class="nav-link">العناية بالبشرة</a></li>
+        <li><a href="#" class="nav-link">الشعر و الجسم</a></li>
+        <li><a href="#" class="nav-link">العناية الشخصية للرجال</a></li>
+        <li><a href="#" class="nav-link">عطور المنزل</a></li> -->
+        </ul>
+      </nav>
+    </header>
+
+    <!-- BREADCRUMB -->
+    <div class="breadcrumb">
+      <a href="index.html">الصفحة الرئيسية</a>
+      <span>›</span>
+      <a href="#">جميع الماركات</a>
+      <span>›</span>
+      <strong>ديور</strong>
+    </div>
+
+    <!-- BRAND HERO -->
+    <section
+      class="brand-hero"
+      style="
+        background: linear-gradient(
+          135deg,
+          #1a0a0a 0%,
+          #3a1010 50%,
+          #1a0a0a 100%
+        );
+      "
+    >
+      <div class="brand-hero-content">
+        <p class="brand-hero-sub">Christian Dior</p>
+        <h1 class="brand-hero-title">ديور</h1>
+        <p class="brand-hero-desc">
+          عناية راقية بالبشرة وعطور فاخرة من دار كريستيان ديور
+        </p>
+      </div>
+    </section>
+
+    <!-- FILTER BAR -->
+    <div class="filter-bar">
+      <span class="filter-label">ترتيب حسب:</span>
+      <div class="filter-tabs">
+        <button class="filter-tab active" data-filter="all">الكل</button>
+        <button class="filter-tab" data-filter="best">الأكثر مبيعاً</button>
+        <button class="filter-tab" data-filter="new">وصل حديثاً</button>
+        <button class="filter-tab" data-filter="low">السعر: الأقل أولاً</button>
+        <button class="filter-tab" data-filter="high">
+          السعر: الأعلى أولاً
+        </button>
+      </div>
+      <span class="products-count" id="productsCount">6 منتج</span>
+    </div>
+
+    <!-- PRODUCTS GRID -->
+    <section class="brand-products">
+      <div class="products-grid" id="productsGrid">
+        <div class="product-card" data-badge="none" data-price="2700">
+          <div class="product-img-wrap">
+            <img
+              src="https://via.placeholder.com/180x220/d0e8f5/3a6b8a?text=Dior+Micellar"
+              alt="ماء ميسيلار"
+            />
+          </div>
+          <div class="product-info">
+            <p class="brand">ديور</p>
+            <p class="product-name">ماء ميسيلار للتنظيف اللطيف</p>
+            <p class="price"><strong>2700</strong> ج.م</p>
+          </div>
+        </div>
+
+        <div class="product-card" data-badge="none" data-price="0">
+          <div class="product-img-wrap">
+            <img
+              src="https://via.placeholder.com/180x220/f5ece8/b08060?text=Dior+Milk"
+              alt="حليب منظف"
+            />
+          </div>
+          <div class="product-info">
+            <p class="brand">ديور</p>
+            <p class="product-name">حليب منظف 200مل</p>
+            <p class="price">اسأل عن السعر</p>
+          </div>
+        </div>
+
+        <div class="product-card" data-badge="none" data-price="8360">
+          <div class="product-img-wrap">
+            <img
+              src="https://via.placeholder.com/180x220/1a0a0a/cc2200?text=One+Essential"
+              alt="سيروم وان إسنشيال"
+            />
+          </div>
+          <div class="product-info">
+            <p class="brand">ديور</p>
+            <p class="product-name">سيروم وان إسنشيال سكن بوستر</p>
+            <p class="price"><strong>8360</strong> ج.م</p>
+          </div>
+        </div>
+
+        <div class="product-card" data-badge="best" data-price="6630">
+          <div class="product-badge best-seller">الأفضل مبيعاً</div>
+          <div class="product-img-wrap">
+            <img
+              src="https://via.placeholder.com/180x220/f5f5f0/888870?text=Capture"
+              alt="كريم كابتشر توتال"
+            />
+          </div>
+          <div class="product-info">
+            <p class="brand">ديور</p>
+            <p class="product-name">كريم كابتشر لشد العين وتصحيح التجاعيد</p>
+            <p class="price"><strong>6630</strong> ج.م</p>
+          </div>
+        </div>
+
+        <div class="product-card" data-badge="best" data-price="4450">
+          <div class="product-badge best-seller">الأفضل مبيعاً</div>
+          <div class="product-img-wrap">
+            <img
+              src="https://via.placeholder.com/180x220/b8e8e8/208080?text=Hydra+Life"
+              alt="كريم مرطب هيدرا لايف"
+            />
+          </div>
+          <div class="product-info">
+            <p class="brand">ديور</p>
+            <p class="product-name">كريم مرطب هيدرا لايف 50 مل</p>
+            <p class="price"><strong>4450</strong> ج.م</p>
+          </div>
+        </div>
+
+        <div class="product-card" data-badge="new" data-price="5950">
+          <div class="product-badge new">وصل حديثاً</div>
+          <div class="product-img-wrap">
+            <img
+              src="https://via.placeholder.com/180x220/f0f0f0/606060?text=Dior+Eye"
+              alt="كابتشر توتال هيالوشنوت"
+            />
+          </div>
+          <div class="product-info">
+            <p class="brand">ديور</p>
+            <p class="product-name">كابتشر توتال هيالوشنوت سيروم</p>
+            <p class="price"><strong>5950</strong> ج.م</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="site-footer">
+      <div class="footer-inner">
+        <div class="footer-brand">
+          <span class="logo-faces footer-logo">KHLAED</span>
+          <p>الوجهة الأولى للجمال والعناية في المنطقة العربية</p>
+        </div>
+        <div class="footer-links">
+          <h4>روابط سريعة</h4>
+          <ul>
+            <li><a href="givenchy.html">جيفنشي</a></li>
+            <li><a href="dior.html">ديور</a></li>
+            <li><a href="clarins.html">كلارنس</a></li>
+            <li><a href="cart.html">عربة التسوق</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom"><p>© 2026 KHALED. جميع الحقوق محفوظة.</p></div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="brand.js"></script>
+  </body>
+</html>

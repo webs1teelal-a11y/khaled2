@@ -1,0 +1,262 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>KHLAED - كلارنس</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="brand.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;500;700;800&family=Playfair+Display:ital,wght@0,700;1,600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- NAVBAR -->
+    <header class="navbar" id="navbar">
+      <div class="nav-top">
+        <a href="index.html" class="nav-logo"
+          ><span class="logo-faces">KHALED</span></a
+        >
+        <div class="nav-search">
+          <input
+            type="text"
+            placeholder="ابحث عن الجمال والعلامات التجارية والمزيد"
+          />
+          <button class="search-btn">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="18"
+              height="18"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <circle cx="11" cy="11" r="8" />
+              <line x1="21" y1="21" x2="16.65" y2="16.65" />
+            </svg>
+          </button>
+        </div>
+        <div class="nav-icons">
+          <a href="cart.html" class="icon-btn" title="عربة التسوق">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="22"
+              height="22"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="1.8"
+                d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z"
+              />
+              <line x1="3" y1="6" x2="21" y2="6" />
+              <path d="M16 10a4 4 0 01-8 0" />
+            </svg>
+            <span class="cart-badge" id="cartBadge">0</span>
+          </a>
+        </div>
+        <button class="hamburger" id="hamburger">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+      <nav class="nav-links" id="navLinks">
+        <ul>
+          <li>
+            <a href="#" class="nav-link active-sale">تصفيات | قريبا</a>
+          </li>
+          <!-- <li><a href="#" class="nav-link highlight">الهدايا</a></li> -->
+          <li><a href="#" class="nav-link nav-egypt">الصفحة الرئيسية</a></li>
+          <!-- <li><a href="#" class="nav-link">جميع الماركات</a></li>
+        <li><a href="#" class="nav-link">العطور</a></li>
+        <li><a href="#" class="nav-link">المكياج</a></li>
+        <li><a href="#" class="nav-link">العناية بالبشرة</a></li>
+        <li><a href="#" class="nav-link">الشعر و الجسم</a></li>
+        <li><a href="#" class="nav-link">العناية الشخصية للرجال</a></li>
+        <li><a href="#" class="nav-link">عطور المنزل</a></li> -->
+        </ul>
+      </nav>
+    </header>
+
+    <!-- BREADCRUMB -->
+    <div class="breadcrumb">
+      <a href="index.html">الصفحة الرئيسية</a>
+      <span>›</span>
+      <a href="#">جميع الماركات</a>
+      <span>›</span>
+      <strong>كلارنس</strong>
+    </div>
+
+    <!-- BRAND HERO -->
+    <section
+      class="brand-hero"
+      style="
+        background: linear-gradient(
+          135deg,
+          #1a2a1a 0%,
+          #2a4a20 50%,
+          #1a2a1a 100%
+        );
+      "
+    >
+      <div class="brand-hero-content">
+        <p class="brand-hero-sub">Clarins Paris</p>
+        <h1 class="brand-hero-title">كلارنس</h1>
+        <p class="brand-hero-desc">
+          إشراقتك كل يوم مع منتجات كلارنس الباريسية الطبيعية
+        </p>
+      </div>
+      <div class="brand-hero-badge-wrap">
+        <div class="sale-badge-big">خصم 25%</div>
+      </div>
+    </section>
+
+    <!-- FILTER BAR -->
+    <div class="filter-bar">
+      <span class="filter-label">ترتيب حسب:</span>
+      <div class="filter-tabs">
+        <button class="filter-tab active" data-filter="all">الكل</button>
+        <button class="filter-tab" data-filter="best">الأكثر مبيعاً</button>
+        <button class="filter-tab" data-filter="new">وصل حديثاً</button>
+        <button class="filter-tab" data-filter="low">السعر: الأقل أولاً</button>
+        <button class="filter-tab" data-filter="high">
+          السعر: الأعلى أولاً
+        </button>
+      </div>
+      <span class="products-count" id="productsCount">6 منتج</span>
+    </div>
+
+    <!-- PRODUCTS GRID -->
+    <section class="brand-products">
+      <div class="products-grid" id="productsGrid">
+        <div class="product-card" data-badge="discount" data-price="2400">
+          <div class="product-badge discount">خصم 25%</div>
+          <div class="product-img-wrap">
+            <img
+              src="https://via.placeholder.com/180x220/d4b896/8a6040?text=Clarins+Foundation"
+              alt="كريم أساس"
+            />
+          </div>
+          <div class="product-info">
+            <p class="brand">كلارنس</p>
+            <p class="product-name">كريم أساس سكين إلوجن فيلفيت</p>
+            <p class="price new-price">
+              <strong>2400</strong> ج.م <del class="old-price">3200 ج.م</del>
+            </p>
+          </div>
+        </div>
+
+        <div class="product-card" data-badge="discount" data-price="1436">
+          <div class="product-badge discount">خصم 25%</div>
+          <div class="product-img-wrap">
+            <img
+              src="https://via.placeholder.com/180x220/5a3040/ffffff?text=744M"
+              alt="أحمر شفاه 744M"
+            />
+          </div>
+          <div class="product-info">
+            <p class="brand">كلارنس</p>
+            <p class="product-name">أحمر شفاه مطفي 744M</p>
+            <p class="price new-price">
+              <strong>1436.25</strong> ج.م <del class="old-price">1915 ج.م</del>
+            </p>
+          </div>
+        </div>
+
+        <div class="product-card" data-badge="new" data-price="2242">
+          <div class="product-badge discount-new">خصم 25% | وصل حديثاً</div>
+          <div class="product-img-wrap">
+            <img
+              src="https://via.placeholder.com/180x220/c8a860/ffffff?text=Everlasting"
+              alt="كريم الأساس إيفرلاستينغ"
+            />
+          </div>
+          <div class="product-info">
+            <p class="brand">كلارنس</p>
+            <p class="product-name">كريم الأساس إيفرلاستينغ بوث</p>
+            <p class="price new-price">
+              <strong>2242.50</strong> ج.م <del class="old-price">2990 ج.م</del>
+            </p>
+          </div>
+        </div>
+
+        <div class="product-card" data-badge="discount" data-price="2250">
+          <div class="product-badge discount">خصم 25%</div>
+          <div class="product-img-wrap">
+            <img
+              src="https://via.placeholder.com/180x220/1a6040/ffffff?text=Vitamin+S30"
+              alt="مصل فيتامين س 30"
+            />
+          </div>
+          <div class="product-info">
+            <p class="brand">كلارنس</p>
+            <p class="product-name">مصل فيتامين س 30</p>
+            <p class="price new-price">
+              <strong>2250</strong> ج.م <del class="old-price">3000 ج.م</del>
+            </p>
+          </div>
+        </div>
+
+        <div class="product-card" data-badge="discount" data-price="7425">
+          <div class="product-badge discount">خصم 25%</div>
+          <div class="product-img-wrap">
+            <img
+              src="https://via.placeholder.com/180x220/d4b896/8a6040?text=Nuit+Lumiere"
+              alt="كريم ليلي نيوتري لوميير"
+            />
+          </div>
+          <div class="product-info">
+            <p class="brand">كلارنس</p>
+            <p class="product-name">كريم ليلي نيوتري-لوميير 50 مل</p>
+            <p class="price new-price">
+              <strong>7425</strong> ج.م <del class="old-price">9900 ج.م</del>
+            </p>
+          </div>
+        </div>
+
+        <div class="product-card" data-badge="discount" data-price="1436">
+          <div class="product-badge discount">خصم 25%</div>
+          <div class="product-img-wrap">
+            <img
+              src="https://via.placeholder.com/180x220/6a1030/ffffff?text=Joli+Rouge"
+              alt="أحمر شفاه جولي روج فيلفت"
+            />
+          </div>
+          <div class="product-info">
+            <p class="brand">كلارنس</p>
+            <p class="product-name">أحمر الشفاه جولي روج فيلفت</p>
+            <p class="price new-price">
+              <strong>1436.25</strong> ج.م <del class="old-price">1915 ج.م</del>
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="site-footer">
+      <div class="footer-inner">
+        <div class="footer-brand">
+          <span class="logo-faces footer-logo">KHALED</span>
+          <p>الوجهة الأولى للجمال والعناية في المنطقة العربية</p>
+        </div>
+        <div class="footer-links">
+          <h4>روابط سريعة</h4>
+          <ul>
+            <li><a href="givenchy.html">جيفنشي</a></li>
+            <li><a href="dior.html">ديور</a></li>
+            <li><a href="clarins.html">كلارنس</a></li>
+            <li><a href="cart.html">عربة التسوق</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom"><p>© 2026 KHALED. جميع الحقوق محفوظة.</p></div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="brand.js"></script>
+  </body>
+</html>
